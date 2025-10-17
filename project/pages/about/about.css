@@ -1,0 +1,2 @@
+/* Светлая тема для hero только на about */
+.hero.hero_theme_light .hero__title { color: #222; }

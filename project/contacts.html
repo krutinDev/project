@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Контакты</title>
+
+  <link rel="stylesheet" href="blocks/button/button.css">
+  <link rel="stylesheet" href="blocks/section/section.css">
+  <link rel="stylesheet" href="blocks/header/header.css">
+  <link rel="stylesheet" href="blocks/menu/menu.css">
+  <link rel="stylesheet" href="blocks/card/card.css">
+  <link rel="stylesheet" href="blocks/footer/footer.css">
+  <link rel="stylesheet" href="blocks/form/form.css">
+  <link rel="stylesheet" href="pages/contacts/contacts.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a class="header__logo" href="index.html">Brand</a>
+      <button class="header__burger button button_size_m button_theme_primary" aria-expanded="false" aria-controls="main-menu">Меню</button>
+      <nav class="header__nav menu" id="main-menu" aria-hidden="true">
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
+          <li class="menu__item"><a class="menu__link" href="about.html">О нас</a></li>
+          <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <h1 class="section__title">Связаться с нами</h1>
+    <form class="form" action="#" method="post" novalidate>
+      <label class="form__field">
+        <span class="form__label">Имя</span>
+        <input class="form__input" type="text" name="name" required>
+        <span class="form__error">Введите имя</span>
+      </label>
+      <label class="form__field">
+        <span class="form__label">Email</span>
+        <input class="form__input" type="email" name="email" required>
+        <span class="form__error">Введите корректный email</span>
+      </label>
+      <label class="form__field">
+        <span class="form__label">Сообщение</span>
+        <textarea class="form__input" name="message" rows="4" required></textarea>
+        <span class="form__error">Введите сообщение</span>
+      </label>
+      <button class="form__submit button button_size_m button_theme_primary" type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner"><div class="footer__brand">Brand © 2025</div></div>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

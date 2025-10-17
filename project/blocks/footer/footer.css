@@ -1,0 +1,9 @@
+.footer {
+  border-top: 1px solid #eee;
+  padding: 24px 16px;
+  background: #fafafa;
+}
+.footer__inner {
+  max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+}
+.footer__brand { color: #666; }

@@ -1,0 +1,31 @@
+.header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  z-index: 10;
+}
+
+.header__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__logo {
+  font-weight: 700;
+  text-decoration: none;
+  color: #222;
+  margin-right: auto;
+}
+
+.header__nav {
+  display: none;
+}
+
+.header__nav.menu_opened {
+  display: block;
+}

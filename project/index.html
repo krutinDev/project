@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Мой БЭМ-сайт — Главная</title>
+
+  
+  <link rel="stylesheet" href="blocks/button/button.css">
+  <link rel="stylesheet" href="blocks/section/section.css">
+  <link rel="stylesheet" href="blocks/header/header.css">
+  <link rel="stylesheet" href="blocks/menu/menu.css">
+  <link rel="stylesheet" href="blocks/hero/hero.css">
+  <link rel="stylesheet" href="blocks/card/card.css">
+  <link rel="stylesheet" href="blocks/grid/grid.css">
+  <link rel="stylesheet" href="blocks/gallery/gallery.css">
+  <link rel="stylesheet" href="blocks/footer/footer.css">
+  <link rel="stylesheet" href="blocks/form/form.css">
+
+  
+  <link rel="stylesheet" href="pages/index/index.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <a class="header__logo" href="index.html">Brand</a>
+
+      <button class="header__burger button button_size_m button_theme_primary" aria-expanded="false" aria-controls="main-menu">
+        Меню
+      </button>
+
+      <nav class="header__nav menu" id="main-menu" aria-hidden="true">
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link" href="index.html">Главная</a></li>
+          <li class="menu__item"><a class="menu__link" href="about.html">О нас</a></li>
+          <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  
+  <section class="hero section">
+    <div class="hero__content">
+      <h1 class="hero__title">Добро пожаловать!</h1>
+      <p class="hero__text">Сайт по методологии БЭМ. Три экрана, три страницы, чистый HTML/CSS/JS.</p>
+      <a class="button button_size_l button_theme_primary" href="about.html">Подробнее</a>
+    </div>
+  </section>
+
+  
+  <section class="section">
+    <h2 class="section__title">Преимущества</h2>
+    <div class="grid">
+      <article class="card">
+        <h3 class="card__title">БЭМ‑структура</h3>
+        <p class="card__text">Четкая организация кода: блоки, элементы, модификаторы.</p>
+      </article>
+      <article class="card">
+        <h3 class="card__title">Повторное использование</h3>
+        <p class="card__text">Блоки независимы и легко переносимы между страницами.</p>
+      </article>
+      <article class="card">
+        <h3 class="card__title">Простые переопределения</h3>
+        <p class="card__text">Можно адаптировать стили на уровне страницы.</p>
+      </article>
+    </div>
+  </section>
+
+  
+  <section class="gallery section">
+    <h2 class="section__title">Галерея</h2>
+    <div class="gallery__grid grid">
+      <div class="gallery__item card"><span class="card__title">Изображение 1</span></div>
+      <div class="gallery__item card"><span class="card__title">Изображение 2</span></div>
+      <div class="gallery__item card"><span class="card__title">Изображение 3</span></div>
+      <div class="gallery__item card"><span class="card__title">Изображение 4</span></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__col">
+        <div class="footer__brand">Brand © 2025</div>
+      </div>
+      <div class="footer__col">
+        <form class="form" action="#" method="post" novalidate>
+          <label class="form__field">
+            <span class="form__label">Email</span>
+            <input class="form__input" type="email" name="email" required>
+            <span class="form__error">Введите корректный email</span>
+          </label>
+          <button class="form__submit button button_size_m button_theme_primary" type="submit">Подписаться</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

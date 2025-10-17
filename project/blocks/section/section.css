@@ -1,0 +1,16 @@
+.section {
+  padding: 48px 16px;
+}
+
+.section__title {
+  margin: 0 0 24px;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.hero.section,
+.gallery.section {
+  min-height: 100vh; /* 1 экран */
+  display: flex;
+  align-items: center;
+}

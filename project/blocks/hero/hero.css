@@ -1,0 +1,10 @@
+.hero {
+  background: linear-gradient(135deg, #f0f4ff, #e9f7ff);
+  text-align: center;
+}
+
+.hero__content { max-width: 800px; margin: 0 auto; padding: 48px 16px; }
+.hero__title { font-size: 48px; margin: 0 0 16px; }
+.hero__text { font-size: 18px; margin: 0 0 24px; color: #555; }
+
+.hero_theme_light { background: #fdfdfd; }

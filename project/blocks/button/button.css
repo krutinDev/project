@@ -1,0 +1,22 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background .2s ease;
+}
+
+.button_size_m { padding: 10px 16px; font-size: 14px; }
+.button_size_l { padding: 14px 20px; font-size: 16px; }
+
+.button_theme_primary {
+  background: #2f80ed;
+  color: #fff;
+}
+.button_theme_primary:hover {
+  background: #1c6bd6;
+}
+.button_disabled { opacity: .6; pointer-events: none; }
