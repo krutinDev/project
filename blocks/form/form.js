@@ -5,10 +5,16 @@ export function initFormValidation() {
       form.classList.remove('form_invalid');
 
       form.querySelectorAll('.form__input[required]').forEach(input => {
-        if (!input.value.trim() || (input.type === 'email' && !/\S+@\S+\.\S+/.test(input.value))) {
+        const isEmpty = !input.value.trim();
+        const isBadEmail = input.type === 'email' && !/\S+@\S+\.\S+/.test(input.value);
+        const field = input.closest('.form__field');
+        const error = field?.querySelector('.form__error');
+
+        if (isEmpty || isBadEmail) {
           valid = false;
-          const field = input.closest('.form__field');
-          if (field) field.querySelector('.form__error')?.classList.add('visible');
+          error?.classList.add('visible');
+        } else {
+          error?.classList.remove('visible');
         }
       });
 
@@ -18,7 +24,7 @@ export function initFormValidation() {
       }
     });
 
-    // Скрываем ошибку по вводу
+    // Скрываем ошибку при вводе
     form.querySelectorAll('.form__input').forEach(input => {
       input.addEventListener('input', () => {
         const field = input.closest('.form__field');

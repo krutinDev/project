@@ -11,4 +11,11 @@ export function initMenu() {
   }
 
   burger.addEventListener('click', toggle);
+
+  // Закрываем меню при клике по ссылке (на мобилке)
+  nav.querySelectorAll('.menu__link').forEach(link => {
+    link.addEventListener('click', () => {
+      if (nav.classList.contains('menu_opened')) toggle();
+    });
+  });
 }

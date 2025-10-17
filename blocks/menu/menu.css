@@ -7,15 +7,13 @@
 }
 
 .menu__link {
+  color: var(--text);
   text-decoration: none;
-  color: #222;
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: background .15s ease;
 }
 
-@media (min-width: 768px) {
-  .header__nav {
-    display: block;
-  }
-  .header__burger {
-    display: none;
-  }
+.menu__link:hover {
+  background: #f1f4f9;
 }

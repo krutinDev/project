@@ -1,2 +1,7 @@
 .gallery__grid { margin-top: 16px; }
-.gallery__item { min-height: 160px; display: flex; align-items: center; justify-content: center; }
+.gallery__item {
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

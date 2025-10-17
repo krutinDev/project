@@ -1,5 +1,5 @@
 .section {
-  padding: 48px 16px;
+  padding: 56px 0;
 }
 
 .section__title {
@@ -8,9 +8,9 @@
   line-height: 1.2;
 }
 
-.hero.section,
-.gallery.section {
-  min-height: 100vh; /* 1 экран */
+/* Модификатор "полноэкранная" секция */
+.section_size_full {
+  min-height: 100vh;
   display: flex;
   align-items: center;
 }
